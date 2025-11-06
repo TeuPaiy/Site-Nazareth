@@ -1,10 +1,112 @@
-img {
-    width: 1000;
-    height: 300;
-}
-
-body  {
-background-color: rgb(255, 255, 255) ;
-text-align: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #e9ecef, #9fb3c6);
+  }
+  
+  .container {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .header img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .header h1 {
+    font-size: 1.2rem;
+    margin-top: -40px;
+  }
+  
+  .feature-img {
+    margin: 20px 0;
+  }
+  
+  .feature-img figure img {
+    width: 100%;
+  }
+  
+  figcaption {
+    text-align: center;
+  }
+  /* biografia */
+  .biografia h2 {
+    border-left: 5px solid #003cff;
+    padding: 12px;
+    margin: 20px auto;
+    font-size: 1.8rem;
+  }
+  
+  .biografia p {
+    margin: 20px 0px;
+  }
+  /* aba da citação */
+  .citaçao {
+  background-color: #767676f2;
+  border-radius: 10px;
+  border-left:  6px solid #0841fe5d;
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+   }
+  
+  .citaçao blockquote {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 1.2rem;
+  }
+  
+  .citaçao p {
+  color: #9fb3c6;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-style: normal;
+  }
+  /* aba curiosidades */
+  .curiosidades {
+  background-color: rgb(255, 255, 255) ;
+  padding: 20px;
+  }
+  
+  .curiosidades h2 {
+    padding: 12px;
+    margin: 20px auto;
+    font-size: 1.8rem;
+  }
+  
+  .curiosidades ul {
+    list-style: circle inside;
+    padding-left: 20px;
+  }
+  .curiosidades li {
+    margin: 6px;
+  }
+  
+  footer {
+  text-align: center;
+  margin-top: 20px;
+  }
+  
+  footer h2 {
+    padding: 12px;
+    font-size: 1.8rem;
+  }
+  
+  
