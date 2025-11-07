@@ -1,112 +1,258 @@
-/* Reset */
+/* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background: linear-gradient(to right, #e9ecef, #9fb3c6);
-  }
-  
-  .container {
-    background-color: #fff;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-  
-  .header img {
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  .header h1 {
-    font-size: 1.2rem;
-    margin-top: -40px;
-  }
-  
-  .feature-img {
-    margin: 20px 0;
-  }
-  
-  .feature-img figure img {
-    width: 100%;
-  }
-  
-  figcaption {
-    text-align: center;
-  }
-  /* biografia */
-  .biografia h2 {
-    border-left: 5px solid #003cff;
-    padding: 12px;
-    margin: 20px auto;
-    font-size: 1.8rem;
-  }
-  
-  .biografia p {
-    margin: 20px 0px;
-  }
-  /* aba da citação */
-  .citaçao {
-  background-color: #767676f2;
-  border-radius: 10px;
-  border-left:  6px solid #0841fe5d;
-  width: 500px;
-  padding: 20px;
-  margin: 20px auto;
-   }
-  
-  .citaçao blockquote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* estilo base do site */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Fonte moderna e legível */
+  color: #e6e6e6; /* Texto claro */
+  background: radial-gradient(circle at top, #1f1f25, #0d0d12); /* Fundo escuro com leve gradiente */
+  line-height: 1.6;
+}
+
+
+
+
+/* area do container */
+.container {
+  background-color: #18181f; /* Fundo de seção mais escuro */
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid #2b2b38; /* Dá definição ao container */
+}
+
+
+
+
+
+/* ===== CABEÇALHO ===== */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header img {
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  color: #f2f2f2;
+  margin-top: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+/* imagenzinha */
+.feature-img {
+  margin: 30px 0;
+}
+
+.feature-img figure img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+figcaption {
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+
+
+/* biografia da banda */
+.biografia h2 {
+  border-left: 5px solid #4169e1; /* Azul real */
+  padding-left: 12px;
+  margin: 30px 0 15px 0;
+  font-size: 1.8rem;
   color: #ffffff;
+  font-weight: 500;
+}
+
+.biografia p {
+  margin: 15px 0;
+  color: #d1d1d1;
+  text-align: justify;
+}
+
+
+
+/* citação */
+.citaçao {
+  background-color: #24242e;
+  border-radius: 10px;
+  border-left: 6px solid #5a7dff; /* Azul suave */
+  width: 80%;
+  padding: 25px;
+  margin: 40px auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.citaçao blockquote {
+  color: #f5f5f5;
   font-style: italic;
   font-size: 1.2rem;
-  }
-  
-  .citaçao p {
-  color: #9fb3c6;
-  margin-top: 20px;
-  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.citaçao p {
+  color: #b3c7ff;
+  margin-top: 15px;
+  font-size: 0.95rem;
   font-style: normal;
-  }
-  /* aba curiosidades */
-  .curiosidades {
-  background-color: rgb(255, 255, 255) ;
-  padding: 20px;
-  }
-  
-  .curiosidades h2 {
-    padding: 12px;
-    margin: 20px auto;
-    font-size: 1.8rem;
-  }
-  
-  .curiosidades ul {
-    list-style: circle inside;
-    padding-left: 20px;
-  }
-  .curiosidades li {
-    margin: 6px;
-  }
-  
-  footer {
+}
+
+
+
+/* CURIOSIDADES: luz de fundo + outras coisas */
+.curiosidades {
+  background: linear-gradient(145deg, #1c1c26, #222232);
+  padding: 70px 60px; /* mais espaçamento interno */
+  border-radius: 16px;
+  margin: 70px auto;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.55);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.curiosidades {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.04), transparent 70%);
+  animation: luzGirando 25s linear infinite;
+  z-index: 0;
+  filter: blur(6px);
+  opacity: 0.6;
+}
+
+.curiosidades h2 {
+  border-left: 5px solid #ffca3a;
+  padding-left: 14px;
+  margin-bottom: 45px;
+  font-size: 2rem;
+  color: #fff8dc;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+/* Lista */
+.curiosidades ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); /* responsivo */
+  gap: 25px;
+  list-style: none;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+}
+
+/* curiosidades */
+.Curiosidades li {
+  background: linear-gradient(145deg, #252535, #1a1a26);
+  padding: 25px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  color: #e3e3e3;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+/* Detalhe de luz qnd passar o mouse na curiosidade */
+.Curiosidades li:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: linear-gradient(145deg, #2a2a3c, #1f1f2b);
+  box-shadow: 0 0 25px rgba(10, 148, 212, 0.25);
+}
+
+/* icone decorativo antes de cada curiosidadezinha */
+.Curiosidades li::before {
+  content: "★ ";
+  color: #ffca3a;
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+
+/* RODAPÉ */
+footer {
   text-align: center;
-  margin-top: 20px;
-  }
-  
-  footer h2 {
-    padding: 12px;
-    font-size: 1.8rem;
-  }
-  
-  
+  margin-top: 40px;
+  color: #c0c0c0;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #5a7dff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffca3a;
+  transition: 0.3s;
+}
+
+footer img {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.fas {
+  background-color: #24242e;
+  border-radius: 10px;
+  border-left: 6px solid #5a7dff; /* Azul suave */
+  width: 80%;
+  padding: 25px;
+  margin: 40px auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.fas blockquote {
+  color: #f5f5f5;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.fas p {
+  color: #b3c7ff;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-style: normal;
+}
